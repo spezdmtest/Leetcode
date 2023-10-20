@@ -17,8 +17,8 @@ public class CalculateRepeats {
         input.add(4);
         input.add(100);
         Collections.singletonList(input).forEach(System.out::print);
-//        Map<Integer, Integer> integerIntegerMap = calculateReports(input);
-//        System.out.println(integerIntegerMap);
+        Map<Integer, Integer> integerIntegerMap = calculateReports(input);
+        System.out.println(integerIntegerMap);
 
     }
 
