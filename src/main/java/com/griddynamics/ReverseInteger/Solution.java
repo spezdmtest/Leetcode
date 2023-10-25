@@ -26,6 +26,7 @@ public class Solution {
         while (x != 0) {
             int pop = x % 10;
             x = x / 10;
+
             if (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && pop > 7)) {
                 return 0;
             }
