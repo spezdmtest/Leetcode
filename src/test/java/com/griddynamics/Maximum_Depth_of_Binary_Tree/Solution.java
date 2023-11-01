@@ -45,13 +45,15 @@ class TreeNode {
 
 public class Solution {
     public int maxDepth(TreeNode root) {
+
         if (root == null) {
             return 0;
         }
-        int leftMaxDepth = maxDepth(root.left);
-        int rightMaxDepth = maxDepth(root.right);
-//        return leftMaxDepth > rightMaxDepth ? leftMaxDepth + 1 : rightMaxDepth + 1;
-        return Math.max(leftMaxDepth, rightMaxDepth) + 1;
+
+        int depthRight = maxDepth(root.right);
+        int depthLeft = maxDepth(root.left);
+
+        return Math.max(depthRight, depthLeft) + 1;
     }
 }
 
