@@ -40,8 +40,7 @@ class TreeNode {
 
 public class Solution {
     public TreeNode sortedArrayToBSD(int[] nums) {
-        TreeNode rootNode = buildSubBST(nums, 0, nums.length - 1);
-        return rootNode;
+        return buildSubBST(nums, 0, nums.length - 1);
     }
     private TreeNode buildSubBST(int[] nums, int start, int end) {
         if (start > end) {
